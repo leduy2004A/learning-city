@@ -80,7 +80,7 @@ async function checkSendCode() {
     const { data: user } = await supabase.auth.getUser();
     if (user.user !== null) {
       sendMailWithCodeCourse( user.user.user_metadata.full_name,getCode.data[0].code,user.user.email).then(()=>{
-        window.location.href = "http://localhost:3000/"
+        window.location.href = "https://learning-city.onrender.com"
       })
         
     }

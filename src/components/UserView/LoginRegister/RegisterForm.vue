@@ -100,7 +100,7 @@ async function registerFunction() {
         });
       if (!error) {
         notyf.success("Đăng kí thành công")
-        window.location.href = "http://localhost:3000/signin"
+        window.location.href = "https://learning-city.onrender.com/signin"
       }
     }
   }

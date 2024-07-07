@@ -52,7 +52,7 @@ if(error)
 else{
   notyf.success("Đăng nhập thành công")
   setTimeout(()=>{
-    window.location.href = "http://localhost:3000/"
+    window.location.href = "https://learning-city.onrender.com/"
   },2000)
 }
 }

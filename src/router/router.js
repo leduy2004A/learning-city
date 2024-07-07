@@ -10,6 +10,7 @@ import ViewBlog from "@/components/UserView/Blog/MainBlog.vue";
 import { supabase } from "@/supabase/supabase";
 import MyBlog from "@/components/UserView/Blog/MyBlog.vue";
 import MyProfile from "@/components/UserView/Profile/MyProfile.vue"
+
 const routes = [
   { path: "/", component: HomeView },
   { path: "/course/:id", component: LearningView },
