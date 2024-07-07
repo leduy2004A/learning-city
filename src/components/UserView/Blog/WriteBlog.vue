@@ -177,9 +177,16 @@ async function postBlog() {
         widget.open();
       } else if (result.isDenied) {
         
-
+        let image_blog = [{image_blog:'http://res.cloudinary.com/dlzfanxoh/image/upload/v1719461754/imageblog/gb8a05u97d6bvwg3bdz1.png'}]
         const { data } = await supabase.auth.getUser();
-        const {data:dataImage} = await supabase.from("Blog").select("image_blog").eq("id",route.params.idblog)
+        if(route.params.idblog !== undefined)
+        {
+          const {data:dataImage} = await supabase.from("Blog").select("image_blog").eq("id",route.params.idblog)
+          image_blog = dataImage
+        }
+        
+        
+       
         if (data.user !== null) {
           const { error } = await supabase.from("Blog").upsert({
             id:route.params.idblog,
@@ -187,7 +194,7 @@ async function postBlog() {
             content: form.text,
             topic: form.topic,
             sub_content: form.subcontent,
-            image_blog: dataImage.image_blog,
+            image_blog: image_blog[0].image_blog,
           },{onConflict:"id"});
           if (!error) {
             notyf.success("Tạo blog thành công");
