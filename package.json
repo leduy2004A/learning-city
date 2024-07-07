@@ -1,0 +1,48 @@
+{
+  "name": "kduycidy",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@fontsource-variable/nunito-sans": "^5.0.14",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@mdi/font": "7.0.96",
+    "@supabase/supabase-js": "^2.43.4",
+    "@vavt/v3-extension": "^1.2.3",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "@vueup/vue-quill": "^1.2.0",
+    "ant-design-vue": "^4.2.1",
+    "crypto-js": "^4.2.0",
+    "firebase": "^10.12.1",
+    "md-editor-v3": "^4.16.7",
+    "mitt": "^3.0.1",
+    "notyf": "^3.10.0",
+    "pinia": "^2.1.7",
+    "roboto-fontface": "*",
+    "sweetalert2": "^11.12.0",
+    "swiper": "^11.1.3",
+    "vue": "^3.4.0",
+    "vue-loading-skeleton": "^2.0.0-beta.1",
+    "vue-router": "^4.3.2",
+    "vue-sweetalert2": "^5.0.11",
+    "vuetify": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.71.1",
+    "unplugin-fonts": "^1.1.1",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.5",
+    "vite-plugin-vuetify": "^2.0.3"
+  }
+}
