@@ -39,9 +39,9 @@
                   </div>
                   <ul class="list-query">
                     <li v-for="n in result_query" class="item-qu">
-                      <a :href="`/course/${n.id}`" @click="open_search = false">
+                      <router-link :to="`/course/${n.id}`" @click="test()">
                         <p>{{ n.name_course }}</p>
-                      </a>
+                      </router-link>
                     </li>
                   </ul>
                 </div>
@@ -180,6 +180,10 @@ async function searchCourse() {
 }
 function closeCourse() {
   open_search.value = false;
+}
+function test(){
+  open_search.value = false
+  console.log(this.$router)
 }
 </script>
 <style scoped>
