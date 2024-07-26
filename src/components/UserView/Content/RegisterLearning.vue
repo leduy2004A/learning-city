@@ -128,8 +128,8 @@ async function sendCode() {
       orderCode: randomOrdercode,
       amount: props.money.down_price,
       description: randomDescription,
-      cancelUrl: "http://localhost:3000/",
-      returnUrl: "http://localhost:3000/",
+      cancelUrl: "https://learning-city.onrender.com/",
+      returnUrl: "https://learning-city.onrender.com/",
       signature: signature,
     };
 
